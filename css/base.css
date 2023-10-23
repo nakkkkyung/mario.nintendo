@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*웹폰트 연결하기*/
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*모든 페이지에 공통으로 적용되는 서식*/
+:root{
+   
+}
+body{
+    font-family: 'GongGothicMedium';
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
