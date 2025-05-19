@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>닌텐도슈퍼마리오</title>
+    <!--초기화-->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css" rel="stylesheet">
+    <!--공통서식-->
+    <link rel="stylesheet" href="./css/base.css" type="text/css" rel="stylesheet">
+    <!--레이아웃서식-->
+    <link rel="stylesheet" href="./css/layout.css" type="text/css" rel="stylesheet">
+    <!--콘텐츠 내용 서식-->
+    <link rel="stylesheet" href="./css/main.css" type="text/css" rel="stylesheet">
+    <!--스와이퍼 슬라이드 서식-->
+    <link rel="stylesheet" href="./css/swiper.css" type="text/css" rel="stylesheet">
+    <!--아이콘 폰트 주소-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--css3속성 사용시 접두사 자동으로 붙여주는 스크립트 소스-->
+    <script src="./script/prefixfree.min.js"></script>
+    <!--제이쿼리 라이브러리 연결-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!--제이쿼리 UI라이브러리 : easing값 사용가능-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!--제이쿼리 쿠키파일-->
+    <script src="./script/jquery.cookie.js"></script>
+    <!--제이쿼리 공통 스크립트-->
+    <script src="./script/layout.js"></script>
+    <!--콘텐츠 스크립트-->
+    <script src="./script/main.js" defer></script>
+    <!--슬라이드 스크립트-->
+    <script src="./script/swiper.js"></script>
+    <style>
+        .lineup swiper-slide-active{
+            scale: 1.2;
+        }
+    </style>
+
+</head>
+<body>
+    <!--헤더영역시작-->
+    <header>
+        <h1>
+            <a href="index.html" title="닌텐도로고">Nintendo</a>
+        </h1>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#" title="역사">History</a></li>
+                <li><a href="#" title="캐릭터소개">Character</a></li>
+                <li><a href="#" title="라인업">Line Up</a></li>
+                <li><a href="#" title="영화">Movie</a></li>
+                <li><a href="#" title="정보">Information</a></li>
+            </ul>
+        </nav>
+        <img src="./images/section1_mario.png" alt="">
+    </header>
+    <!--메인영역시작-->
+    <main>
+        <section id="main_intro">
+            <h2>마리오 인트로 영상콘텐츠</h2>
+            <article>
+                <p>슈퍼마리오 , 닌텐도로 즐기자</p>
+            </article>
+            <video src="./media/nintendo.mp4" loop muted infinite autoplay></video>
+            <a href="#" title="아래로 이동" class="next_btn">아래로 이동</a>
+            <img src="./images/" alt="">
+        </section>
+        <section id="history">
+                <h2>마리오 history</h2>
+            <article>
+                <h2>History</h2>
+                <label for="r01"></label>
+                <label for="r02"></label>
+                <label for="r03"></label>
+                <label for="r04"></label>
+                <label for="r05"></label>
+                <div class="age">
+                    <img src="./images/age1.png" alt="" class="age1">
+                    <img src="./images/age2.png" alt="" class="age2">
+                    <img src="./images/age3.png" alt="" class="age3">
+                    <img src="./images/age4.png" alt="" class="age4">
+                    <img src="./images/age5.png" alt="" class="age5">
+                </div>
+                <input type="radio" id="r01" name="a" checked>
+                <ul class="c01">
+                    <li><img src="./images/1985.png" alt=""><p><span>1985.10.18</span> <br> 슈퍼 마리오 <br> 브라더스</p></li>
+                    <li><img src="./images/1986.jpg" alt=""><p><span>1986.06.03</span> <br> 슈퍼 마리오 브라더스 <br> 더 로스트 레벨즈</p></li>
+                    <li><img src="./images/1989.png" alt=""><p><span>1989.08.11</span> <br> Super Mario Land</p></li>
+                </ul>
+                <input type="radio" id="r02" name="a">
+                <ul class="c02">
+                    <li><img src="./images/1990.png" alt=""><p><span>1985.10.18</span> <br> 슈퍼 마리오 <br> 브라더스3</p></li>
+                    <li><img src="./images/1997.png" alt=""><p><span>1989.08.11</span> <br> Super Mario 64</p></li>
+                    <li><img src="./images/1999.png" alt=""><p><span>1989.08.11</span> <br>Mario Party</p></li>
+                </ul>
+                <input type="radio" id="r03" name="a">
+                <ul class="c03">
+                    <li><img src="./imageS/2002.png" alt=""><p><span>2002.06.03</span> <br> Super Mario <br>Sunshine </p></li>
+                    <li><img src="./images/2008.jpg" alt=""><p><span>2008.08.11</span> <br> 마리오 카트 Wii</p></li>
+                </ul>
+                <input type="radio" id="r04" name="a">
+                <ul class="c04">
+                    <li><img src="./images/2010.jpg" alt=""><p><span>1985.10.18</span> <br> 슈퍼 마리오 Wii 2 <br>갤럭시 어드벤처 투게더</p></li>
+                    <li><img src="./images/2012.jpg" alt=""><p><span>1986.06.03</span> <br> 마리오 파티 9</p></li>
+                </ul>
+                <input type="radio" id="r05" name="a">
+                <ul class="c05">
+                    <li><img src="./images/2020.png" alt=""><p><span>1985.10.18</span> <br>페이퍼 마리오 <br>종이접기 킹</p></li>
+                    <li><img src="./images/2021.png" alt=""><p><span>1986.06.03</span> <br>슈퍼 마리오 3D 월드</p></li>
+                </ul>
+                <div class="leaf"><img src="./images/leaf.png" alt=""></div>
+                <img src="./images/plant_mario.png" alt="" class="p_mario">
+            </article>
+        </section>
+        <section id="character">
+            <h2>캐릭터소개</h2>
+            <article>
+                <h2>Character</h2>
+                <!-- 클래스명은 변경하면 안 됨 -->
+                <div class="swiper-container cha_con">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/intro_mario.png" alt="마리오">
+                            
+                            <button class="cha_btn btn1">자세히 보기 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div> 
+                        <div class="swiper-slide">
+                            <img src="./images/intro_louis.png" alt="루이지">
+                            
+                            <button class="cha_btn btn2">자세히 보기 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div> 
+                        <div class="swiper-slide">
+                            <img src="./images/intro_peach.png" alt="피치">
+                            
+                            <button class="cha_btn btn3">자세히 보기 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div> 
+                        <div class="swiper-slide">
+                            <img src="./images/intro_dasiy.png" alt="데이지">
+                            
+                            <button class="cha_btn btn4">자세히 보기 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div> 
+                        <div class="swiper-slide">
+                            <img src="./images/intro_kino.png" alt="키노피오">
+                            
+                            <button class="cha_btn btn5">자세히 보기 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div> 
+                        <div class="swiper-slide">
+                            <img src="./images/intro_koopa.png">
+                            
+                            <button class="cha_btn btn6">자세히 보기 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div> 
+                        <div class="swiper-slide">
+                            <img src="./images/intro_yosi.png" alt="요시">
+                        
+                            <button class="cha_btn btn7">자세히 보기 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div> 
+                        <div class="swiper-slide">
+                            <img src="./images/intro_wario.png" alt="와리오">
+                            
+                            <button class="cha_btn btn8">자세히 보기 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div> 
+                        <div class="swiper-slide">
+                            <img src="./images/intro_walouis.png" alt="와루이지">
+                            
+                            <button class="cha_btn btn9">자세히 보기 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- 네비게이션 -->
+                    <div class="swiper-button-next next"><img src="./images/btn_right.png" alt=""></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                    <div class="swiper-button-prev prev"><img src="./images/btn_left.png" alt=""></div><!-- 이전 버튼 -->
+                </div>
+            </article>
+            <!-- 모달창 -->
+            <div class="moda modal1">
+                <div class="modal_wrap">
+                    <i class="fa-solid fa-plus"></i>
+                    <img src="./images/cha01.png" alt="마리오" id="modalimg">
+                </div>
+            </div>
+            <div class="moda modal2">
+                <div class="modal_wrap">
+                    <i class="fa-solid fa-plus"></i>
+                    <img src="./images/cha02.png" alt="루이지" id="modalimg">
+                </div>
+            </div>
+            <div class="moda modal3">
+                <div class="modal_wrap">
+                    <i class="fa-solid fa-plus"></i>
+                    <img src="./images/cha03.png" alt="피치공주" id="modalimg">
+                </div>
+            </div>
+            <div class="moda modal4">
+                <div class="modal_wrap">
+                    <i class="fa-solid fa-plus"></i>
+                    <img src="./images/cha04.png" alt="데이지" id="modalimg">
+                </div>
+            </div>
+            <div class="moda modal5">
+                <div class="modal_wrap">
+                    <i class="fa-solid fa-plus"></i>
+                    <img src="./images/cha05.png" alt="키노피오" id="modalimg">
+                </div>
+            </div>
+            <div class="moda modal6">
+                <div class="modal_wrap">
+                    <i class="fa-solid fa-plus"></i>
+                    <img src="./images/cha06.png" alt="요시" id="modalimg">
+                </div>
+            </div>
+            <div class="moda modal7">
+                <div class="modal_wrap">
+                    <i class="fa-solid fa-plus"></i>
+                    <img src="./images/cha07.png" alt="쿠파" id="modalimg">
+                </div>
+            </div>
+            <div class="moda modal8">
+                <div class="modal_wrap">
+                    <i class="fa-solid fa-plus"></i>
+                    <img src="./images/cha08.png" alt="와리오" id="modalimg">
+                </div>
+            </div>
+            <div class="moda modal9">
+                <div class="modal_wrap">
+                    <i class="fa-solid fa-plus"></i>
+                    <img src="./images/cha09.png" alt="와루이지" id="modalimg">
+                </div>
+            </div>
+        </section>
+        <section>
+        <div class="parallax"></div>
+        </section>
+        <section id="lineup">
+            <h2>Line up</h2>
+            <article class="line_box">
+                <h2>스마트폰용 앱으로 즐길 수있는 마리오 시리즈</h2>
+                <div class="phone-wrap">
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <div class="monitor">
+                        <div><video src="./media/Mario Kart Tour - Game Play 3.mp4" loop muted infinite autoplay></video></div>
+                    </div>
+                </div>
+                <div class="phone-wrap">
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <div class="monitor">
+                        <div><video src="./media/SUPER MARIO RUN Gameplay.mp4" loop muted infinite autoplay></video></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="movie">
+            <h2>영화</h2>
+            <article class="movie1">
+                <h2>movie</h2>
+                <p>슈퍼마리오 브라더스 The Super Mario Bros</p>
+                <video src="./media/[슈퍼 마리오 브라더스] 파이널 예고편.mp4" loop muted infinite autoplay></video>
+                <div class="review1"><img src="./images/box.png" alt=""><img src="./images/bell.png" alt=""></div>
+                <div class="review2"><img src="./images/box2.png" alt=""><img src="./images/you.png" alt=""></div>
+                <div class="review3"><img src="./images/box3.png" alt=""><img src="./images/yousi.png" alt=""></div>
+            </article>
+        </section>
+        <section id="information">
+            <h2>정보</h2>
+            <article>
+                <h2>information</h2>
+                <p>마리오의 최신뉴스를 알아보세요</p>
+                <div class="swiper-container info">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/info01.png">
+                            <div class="info_txt">
+                                <p>마리오뉴스</p><span>2023.08.11</span><button class="info_btn">view more</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/info02.png">
+                            <div class="info_txt">
+                                <p>마리오뉴스</p><span>2023.08.11</span><button class="info_btn">view more</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/info03.png">
+                            <div class="info_txt">
+                                <p>마리오뉴스</p><span>2023.08.11</span><button class="info_btn">view more</button>
+                            </div></div>
+                        <div class="swiper-slide">
+                            <img src="./images/info04.png">
+                            <div class="info_txt">
+                                <p>마리오뉴스</p><span>2023.08.11</span><button class="info_btn">view more</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/info05.png">
+                            <div class="info_txt">
+                                <p>마리오뉴스</p><span>2023.08.11</span><button class="info_btn">view more</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/info06.png">
+                            <div class="info_txt">
+                                <p>마리오뉴스</p><span>2023.08.11</span><button class="info_btn">view more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 네비게이션 -->
+                    <div class="swiper-button-next next"><img src="./images/right_arrow.png" alt=""></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                    <div class="swiper-button-prev prev"><img src="./images/left_arrow.png" alt=""></div><!-- 이전 버튼 -->
+                </div>
+            </article>
+        </section>
+        <!--<section id="banner">
+            <h2>정보</h2>
+            <article>
+                <img src="./images/banner01.jpg" alt="" id="event_banner">
+            </article>
+        </section>
+        <script>
+        img_num=Math.floor(Math.random()*8+1);
+        document.getElementById('event_banner').src="./images/banner0"+img_num+".jpg";
+        </script>-->
+    </main>
+    <footer>
+        <div>
+            <img src="./images/logo-small.png" alt="마리오로고">
+            <address>
+              <p><a href="#" title="닌텐도 홈페이지">한국 닌텐도 홈페이지</a></p>
+              <p>개인정보처리방침</p>
+              <p>Copyright©2023 Nintendo Mario. All Rights Reserved.</p>
+            </address>
+          </div>
+    </footer>
+</body>
+</html>
