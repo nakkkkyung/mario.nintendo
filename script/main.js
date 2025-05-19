@@ -47,21 +47,49 @@ new Swiper(".info", {
 
 //스크롤시 리뷰 옆으로 나타나기
 $(document).ready(function(){
+	//모달 창
+	$('.moda').hide();
 
-	$(window).scroll(function(){
-		let sos1=$(this).scrollTop();
-		console.log(sos1);
+	$('.swiper-slide .btn1').click(function(){
+	$('.modal1').show();
+	return false;
+	});
+	$('.swiper-slide .btn2').click(function(){
+	$('.modal2').show();
+	return false;
+	});
+	$('.swiper-slide .btn3').click(function(){
+	$('.modal3').show();
+	return false;
+	});
+	$('.swiper-slide .btn4').click(function(){
+	$('.modal4').show();
+	return false;
+	});
+	$('.swiper-slide .btn5').click(function(){
+	$('.modal5').show();
+	return false;
+	});
+	$('.swiper-slide .btn6').click(function(){
+	$('.modal6').show();
+	return false;
+	});
+	$('.swiper-slide .btn7').click(function(){
+	$('.modal7').show();
+	return false;
+	});
+	$('.swiper-slide .btn8').click(function(){
+	$('.modal8').show();
+	return false;
+	});
+	$('.swiper-slide .btn9').click(function(){
+	$('.modal9').show();
+	return false;
+	});
 
-		if(sos1>=3800){
-			$('.review1').animate({'right':'0px'},500)
-		}else if(3801<=sos1<=4100){
-			$('.review2').animate({'right':'0px'},500)
-		}else{
-			$('.review3').animate({'right':'0px'},500)
-		}
+	$('.moda .modal_wrap i.fa-plus').click(function(){
+		$('.moda').hide();
 	})
-
-
 
 })
 

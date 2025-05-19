@@ -7,7 +7,7 @@ $(document).ready(function(){
         <div class='inner'>
             <a href="#" title=""><img src="./images/modal_img.png" alt=""></a>
             <p>
-                <input type="checkbox" id="ch"><label for="ch">오늘 하루 열지 않음</label>
+                <input type="checkbox" id="ch"><label for="ch" >오늘 하루 열지 않음</label>
                 <input type="button" value="CLOSE" id="c_btn">
             </p>
         </div>
@@ -66,26 +66,8 @@ $(document).ready(function(){
                 'color':'#f00',
                 'border':'4px solid #f00'
             });
-
         }
-
-
     });
-
-    $('#movie .movie1').hover(function(){
-        $('.review1').css({
-            'right':'0px',
-            'transition':'1.6s'
-        })
-        $('.review2').css({
-            'right':'0px',
-            'transition':'1.6s'
-        })
-        $('.review3').css({
-            'right':'0px',
-            'transition':'2s'
-        })
-    })
 
     function scroll_btn(){
         $('.next_btn').animate({'bottom':'6%'},800).animate({'bottom':'4%'},800)
@@ -94,7 +76,7 @@ $(document).ready(function(){
 
 
     $('.next_btn').click(function(){
-        $('html,body').animate({scrollTop:$('#history').offset().top-50},400)
+        $('html,body').animate({scrollTop:$('#history').offset().top-18},400)
         return false;
     })
 
@@ -107,73 +89,20 @@ $(document).ready(function(){
         console.log(i); //2,3,4,5,6...
 
         if(i<=2){
-            $('html,body').animate({scrollTop:$('main section').eq(i).offset().top-50},400,'easeOutCubic');
+            $('html,body').animate({scrollTop:$('main section').eq(i).offset().top-15},400,'easeOutCubic');
             return false;
     
         }else{
-            $('html,body').animate({scrollTop:$('main section').eq(d).offset().top-50},400,'easeOutCubic');
+            $('html,body').animate({scrollTop:$('main section').eq(d).offset().top-65},400,'easeOutCubic');
             return false;
         }
 
     });
 
-
     let menu=$('.gnb>li>a')
     menu.click(function(){
         $(this).animate({'text-decoration':'underline'});
         $(this).siblings().removeClass();
-    })
-    
-    //캐릭터 모달창 
-    $('.swiper-slide>button').click(function(){
-        // let img_url = $(this).siblings('.cha_modal').attr('src')
-        let n=1;
-        let modal = `
-        <div class='c_modal'>
-            <div>
-                <img src="" class="c_img">
-                <span class="c_page">&nbsp;</span>
-                <i class="fas fa-times" id="close"></i>
-                <i class="fas fa-angle-left c_left"></i>
-                <i class="fas fa-angle-right c_right"></i>
-            </div>
-        </div>
-        `;
-        
-        $('body').append(modal);  
-        $('.c_img').attr('src');
-        
-
-
-        const c_left=document.querySelector('.c_left');
-        const c_right=document.querySelector('.c_right');
-
-        c_right.onclick=function(){
-            if(n==9){
-                n=1;
-            }else{
-                n=n+1;
-            }
-            console.log(n);
-            document.querySelector('.c_page').innerHTML=n+'/9';
-            document.querySelector('.c_img').src='./images/cha0'+n+'.png'
-        }
-
-
-        c_left.onclick=function(){
-            if(n==1){
-                n=9;
-            }else{
-                n=n-1;
-            }
-            console.log(n);
-            document.querySelector('.c_page').innerHTML=n+'/9';
-            document.querySelector('.c_img').src='./images/cha0'+n+'.png'
-        }
-
-        $('.c_modal>div>#close').click(function(){
-            $(this).modal.hide();
-            });
     })
     });
 
